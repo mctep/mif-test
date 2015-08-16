@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": "https://github.com/mctep/mif-test",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "(cd client && gulp compile); NODE_PATH=.:./server NODE_ENV=production node index.js",
