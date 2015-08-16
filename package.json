@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_PATH=.:./server node index.js",
+    "start": "(cd client && gulp compile); NODE_PATH=.:./server NODE_ENV=production node index.js",
     "start-daemon": "NODE_PATH=.:./server nodemon -w server index.js"
   },
   "author": "",
