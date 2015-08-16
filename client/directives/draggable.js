@@ -4,8 +4,8 @@ var $ = require('jquery');
 
 app.directive('draggable', draggable);
 
-draggable.$inject = ['$window', '$timeout', '$interval'];
-function draggable($window, $timeout, $interval) {
+draggable.$inject = ['$window', '$timeout', '$interval', 'isIE'];
+function draggable($window, $timeout, $interval, isIE) {
 	$window = $($window);
 
 	var directive = {
@@ -28,6 +28,10 @@ function draggable($window, $timeout, $interval) {
 
 		function dragStart(evt) {
 			if (evt.button !== 0) { return; }
+
+			if (isIE() && isIE() <= 9) {
+				disableSelecting();
+			}
 
 			// массив областей, где будут храниться
 			// места для дропа
@@ -90,6 +94,10 @@ function draggable($window, $timeout, $interval) {
 
 				clearScrollInterval();
 				updateModel();
+
+				if (isIE() && isIE() <= 9) {
+					enableSelecting();
+				}
 			}
 
 			function moveClone(evt) {
@@ -210,6 +218,18 @@ function draggable($window, $timeout, $interval) {
 				$scope.model.splice(index, 0, modelItem[0]);
 				// и вызываем перерисовку
 				$scope.$apply();
+			}
+
+			function stopPropagation() {
+				return false;
+			}
+
+			function disableSelecting() {
+				$(document).on('selectstart', stopPropagation);
+			}
+
+			function enableSelecting() {
+				$(document).off('selectstart', stopPropagation);
 			}
 		}
 	}
