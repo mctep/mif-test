@@ -1,0 +1,8 @@
+node_modules
+*.log
+
+client/public/*
+
+!client/public/favicon.png
+!client/public/images
+!client/public/images/*

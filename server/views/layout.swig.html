@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="favicon.png" type="image/x-icon">
+		<title>{% block title %}{% endblock %}</title>
+		{% block styles %}{% endblock %}
+	</head>
+	<body>
+		{% block body %}{% endblock %}
+	</body>
+
+	<script src="/vendors.js"></script>
+	{% block scripts %}{% endblock %}
+
+	{% if LIVERELOAD_PORT %}
+		<script type="text/javascript">
+			document.write('\<script src="http://' + location.hostname + ':{{ LIVERELOAD_PORT }}/livereload.js"\>\<\/script\>');
+		</script>
+	{% endif %}
+</html>

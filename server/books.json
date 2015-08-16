@@ -1,0 +1,70 @@
+[
+	{
+		"description":
+			"<a href=\".\">Краткая история почти ничего.</a> Эта книга — недоразуменье.",
+		"cover": "/images/books/my_life.png",
+		"title": "Моя жизнь. Мои поражения",
+		"author": "Доктор Зойдберг",
+		"bookmark": "green"
+	},
+
+	{
+		"description": "<a href=\".\">Все знания о вселенной</a> компактно упакованы на одной странице.",
+		"cover": "/images/books/about_stars.png",
+		"title": "Что Фрай знает о звездах? Полное и исчерпывающее руководство",
+		"author": "Ф. Фрай"
+	},
+
+	{
+		"description": "Автор подробно, всего двумя фразами, <a href=\".\">объясняет все.</a>",
+		"cover": "/images/books/build_ship.png",
+		"title": "Как построить звездолет и блек-джек чужими руками",
+		"author": "Бендер Великий",
+		"bookmark": "gray"
+	},
+
+	{
+		"description": "Двоичные <a href=\".\">размышления о жизни после пресса.</a>",
+		"cover": "/images/books/robot_soul.png",
+		"title": "Душа робота",
+		"author": "Книга скачана с торрентов",
+		"bookmark": "red"
+	},
+
+	{
+		"description": "Прозрачные тексты на мутные темы.",
+		"title": "Прозрачная книга",
+		"bookmark": "gray"
+	},
+
+	{
+		"description": "О чем спросить первого встречного мутанта с другой планеты. Руководство по умиранию.",
+		"cover": "/images/books/the_last_question.jpg",
+		"title": "Последний ворос мутанту",
+		"author": "Ф. Фрай",
+		"bookmark": "green"
+	},
+
+	{
+		"description": "Технические чертежи и детали самого лучшего робота на свете.",
+		"cover": "/images/books/i_am_bender.jpg",
+		"title": "Я Бендер",
+		"bookmark": "gray"
+	},
+
+	{
+		"description": "Коротко и ясно. Кому не ясно — Люрр объяснит. Коротко.",
+		"cover": "/images/books/people.jpg",
+		"title": "Земляне!",
+		"author": "Люрр.",
+		"bookmark": "red"
+	},
+
+	{
+		"description": "Для этой книги обложка просто не была найдена",
+		"cover": "/images/books/not_found.jpg",
+		"title": "Книга с битой ссылкой на обложку",
+		"author": "Константин Васильев",
+		"bookmark": "red"
+	}
+]
