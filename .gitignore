@@ -6,3 +6,5 @@ client/public/*
 !client/public/favicon.png
 !client/public/images
 !client/public/images/*
+!client/public/fonts
+!client/public/fonts/*
