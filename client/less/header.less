@@ -1,0 +1,276 @@
+.header {
+	margin: 0 @edge-magin-base;
+	margin-top: 60px;
+
+	.header__logo {
+		display: inline-block;
+	}
+
+	@media (max-width: @width-third-step) {
+		margin: 0;
+		margin-top: 40px;
+		margin-bottom: -10px;
+	}
+}
+
+.main-text {
+	max-width: 640px;
+	margin: 0 auto;
+
+	h3 {
+		line-height: 1.285714;
+		font-size: 42px;
+		margin-top: 19px;
+
+		@media (max-width: @width-third-step) {
+			font-size: 32px;
+			line-height: 54px;
+			margin-top: 12px;
+		}
+	}
+
+	h4 {
+		line-height: 32px;
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
+	p, ul {
+		line-height: 32px;
+		font-size: 19px;
+		margin-top: 7px;
+
+		@media (max-width: @width-third-step) {
+			margin-top: 3px;
+		}
+	}
+
+	ul {
+		margin-top: -18px;
+	}
+
+	li {
+		list-style: none;
+		margin: 16px 0;
+
+		padding-left: 24px;
+		&:before {
+			content: '— ';
+			margin-left: -24px;
+		}
+	}
+
+	.employee {
+		margin-top: 6px;
+		margin-bottom: 28px;
+
+		p {
+			margin-top: 12px;
+			margin-bottom: 16px;
+		}
+
+		@media (max-width: @width-third-step) {
+			// margin-bottom: 18px;
+		}
+	}
+
+	h3.employees-title {
+		margin-top: 39px;
+	}
+
+	.cite {
+		display: block;
+		margin: 41px -120px 37px;
+
+		@media (max-width: @width-first-step) {
+			margin-left: -40px;
+			margin-right: -40px;
+		}
+
+		@media (max-width: @width-second-step) {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+
+		@media (max-width: @width-third-step) {
+			margin-top: 28px;
+			margin-bottom: 28px;
+			margin-left: 0;
+			margin-right: 0;
+			font-size: 28px;
+			line-height: 42px;
+			padding: 23px 0 29px;
+		}
+
+		padding: 28px 0 35px;
+		text-align: center;
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		line-height: 54px;
+		font-size: 36px;
+		font-family: als_fuchsiaregular;
+		font-style: italic;
+	}
+}
+
+.slogan {
+	display: block;
+
+	margin: 0 @edge-magin-base;
+	margin-top: 28px;
+
+	font-weight: bold;
+	font-size: 72px;
+
+	text-align: center;
+
+	@media (max-width: @width-third-step) {
+		font-size: 38px;
+		margin: 0;
+		margin-top: 40px;
+	}
+}
+
+.hide-on-small {
+	@media (max-width: @width-second-step) {
+		display: none;
+	}
+}
+
+.slogan_wide {
+	margin-top: 71px;
+	max-width: 1200px;
+}
+
+.lead {
+	max-width: 880px;
+	line-height: 1.5;
+	font-size: 32px;
+
+	margin: 0 auto;
+	text-align: center;
+
+	margin-top: 15px;
+
+	@media (max-width: @width-third-step) {
+		font-size: 24px;
+		line-height: 34px;
+	}
+}
+
+.avatars {
+	display: block;
+	text-align: center;
+
+	li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+	}
+
+	margin-top: 50px;
+	margin-bottom: -11px;
+}
+
+.avatar {
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0 38px;
+	margin-bottom: 35px;
+
+	position: relative;
+
+	img {
+		font-size: 0;
+	}
+
+	@media (max-width: @width-third-step) {
+		margin: 0 16px;
+		margin-bottom: 35px;
+	}
+}
+
+.avatar_crown:after {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	width: 123px;
+	height: 149px;
+	background: data-uri('../public/images/avatars/crown.png') no-repeat;
+	top: -32px;
+	left: -6px;
+}
+
+.footer {
+	display: block;
+	width: 300px;
+	height: 193px;
+	margin: 0 auto;
+	background: url('/images/footer.png') no-repeat center center;
+	margin-top: 60px;
+}
+
+.search-field {
+	float: right;
+
+	width: 313px;
+	margin: 0 auto;
+	margin-top: 3px;
+	margin-right: -29px;
+
+	@media (max-width: @width-second-step) {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 36px;
+	}
+
+	.search-field__input {
+		position: relative;
+		display: block;
+		margin-right: 34px;
+
+		border-radius: 14px;
+		border: 1px solid #b3b3b3;
+		background: data-uri('../public/images/zoom.png') no-repeat 7px center;
+		box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+	}
+
+	input {
+		width: 100%;
+		box-sizing: border-box;
+		height: 30px;
+		line-height: 20px;
+		font-size: 15px;
+		padding-left: 32px;
+		padding-right: 7px;
+
+		outline: none;
+		border: none;
+		background: none;
+
+		margin-right: 34px;
+		position: relative;
+
+		font-family: Arial, sans-serif;
+	}
+
+	button {
+		position: absolute;
+		right: -34px;
+		top: 0;
+		width: 30px;
+		height: 30px;
+
+		background: none;
+		border: none;
+		vertical-align: bottom;
+		background: data-uri('../public/images/enter.png') no-repeat center center;
+		cursor: pointer;
+
+		@media (max-width: @width-second-step) {
+
+		}
+	}
+}

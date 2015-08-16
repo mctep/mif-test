@@ -1,0 +1,35 @@
+<div class="books">
+	<div class="book book_small" ng-repeat="book in booksCtrl.books track by book.id" draggable="booksCtrl.books">
+		<div class="cover">
+			<div class="cover__container">
+				<div class="cover__image" draggable-anchor>
+					<div class="cover__fake" load-src-fake draggable-scale>
+						<div class="cover__title" ng-if="book.title">
+							{{ book.title }}
+						</div>
+
+						<div class="cover__author" ng-if="book.author">
+							{{ book.author }}
+						</div>
+					</div>
+
+					<img ng-if="book.cover" load-src="{{ book.cover }}" alt="{{ book.title }}" />
+				</div>
+
+				<div ng-if="book.bookmark"
+					class="bookmark"
+					ng-class="['bookmark', 'bookmark_' + book.bookmark]"
+				></div>
+			</div>
+		</div>
+		<div class="book__description" ng-if="book.description" ng-bind-html="book.description"></div>
+	</div>
+
+	<div class="more-button" ng-click="booksCtrl.loadMore()" ng-if="!booksCtrl.loading">
+		Еще несколько книг
+	</div>
+
+	<div class="more-button more-button_loading" ng-if="booksCtrl.loading">
+		Загрузка...
+	</div>
+</div>

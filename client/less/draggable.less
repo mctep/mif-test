@@ -1,0 +1,49 @@
+.draggable {
+	position: fixed;
+	z-index: 100;
+
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.dragging {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.drop-place {
+	@color: #e51907;
+
+	position: absolute;
+
+	width: 2px;
+	top: -10px;
+	bottom: -10px;
+	left: 0;
+	background-color: @color;
+
+	&:after, &:before {
+		content: '';
+		width: 6px;
+		height: 6px;
+		background-color: @color;
+		border-radius: 100%;
+		position: absolute;
+	}
+
+	&:before {
+		top: -3px;
+		left: -2px;
+	}
+
+	&:after {
+		bottom: -3px;
+		left: -2px;
+	}
+}

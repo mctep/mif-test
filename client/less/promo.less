@@ -1,0 +1,78 @@
+.promo {
+	margin-top: 33px;
+	position: relative;
+}
+
+.promo__book {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.promo__price {
+	min-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.promo__button {
+	background-color: #865787;
+	background-image: linear-gradient(#865787, #623b65);
+	color: #fff;
+	font-size: 32.6px;
+	padding: 19.5px 28.5px;
+	border-radius: 12px;
+	display: inline-block;
+	cursor: pointer;
+
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+
+	margin-top: 21px;
+	margin-bottom: 24px;
+
+	position: relative;
+	z-index: 100;
+
+	&:hover {
+		background-color: #c18cc4;
+		background-image: linear-gradient(#c18cc4, #4b294d);
+	}
+
+	&:active {
+		background-color: #c18cc4;
+		background-image: linear-gradient(#865788, #633b65);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	}
+
+	@media (max-width: @width-second-step) {
+		margin-top: -3px;
+	}
+}
+
+.price {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.currency {
+	text-decoration: line-through;
+}
+
+.price-description {
+	max-width: 420px;
+	margin: 0 auto;
+	color: #dcdcdc;
+	font-style: italic;
+
+	p {
+		font-size: 15px;
+		line-height: 1.26;
+		margin: 0;
+		margin-bottom: 6px;
+	}
+
+	img {
+		line-height: 0;
+		font-size: 0;
+	}
+}

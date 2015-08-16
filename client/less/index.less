@@ -1,0 +1,43 @@
+@import 'reset.less';
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.166667;
+}
+
+@link-color: #4283c0;
+@link-color-hover: #e51907;
+
+a { color: @link-color; }
+a:hover { color: @link-color-hover; }
+
+// базовый отступ от края контейнера
+@edge-magin-base: 43px;
+// ширина контейнера для большой книги
+@book-width-big: 440px;
+
+// размер окна, при котором промо-блок уменьшается
+@width-first-step: 1065px;
+// размер окна, при котором промо-описания становятся блочными
+@width-second-step: 800px;
+// размер мобильного окна
+@width-third-step: 600px;
+
+@font-face {
+	font-family: 'als_fuchsiaregular';
+	src: url('/fonts/alsfuchsia-webfont.eot');
+	src: url('/fonts/alsfuchsia-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/alsfuchsia-webfont.woff2') format('woff2'),
+		url('/fonts/alsfuchsia-webfont.woff') format('woff'),
+		url('/fonts/alsfuchsia-webfont.ttf') format('truetype'),
+		url('/fonts/alsfuchsia-webfont.svg#als_fuchsiaregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import 'container.less';
+@import 'header.less';
+@import 'promo.less';
+@import 'promo-features.less';
+@import 'book.less';
+@import 'draggable.less';
