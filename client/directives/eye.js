@@ -23,6 +23,12 @@ function eye($timeout, $window) {
 		var centerX = offset.left + pupil.width() / 2;
 		var centerY = offset.top + pupil.height() / 2;
 
+		$window.on('resize', function() {
+			offset = pupil.offset();
+			centerX = offset.left + pupil.width() / 2;
+			centerY = offset.top + pupil.height() / 2;
+		});
+
 		var animateDuration = 300;
 		animate();
 
